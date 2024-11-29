@@ -1,0 +1,56 @@
+/* ---------------------------- Contenedor padre ---------------------------- */
+.contenedor{
+    display: flex;
+    border: 2px solid #333;
+    margin: 20px;
+    padding: 10px;
+    gap: 10px;
+}
+/* ----------------------------- Elementos hijos ---------------------------- */
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------- Ejemplos de flex-direction ----------------------- */
+.direction-row{
+    flex-direction: row;
+}
+.direction-column{
+    flex-direction: column;
+}
+/* -------------------------- Ejemplos de flex-wrap ------------------------- */
+.nowrap{
+    flex-wrap: nowrap;
+    width: 350px;
+}
+.wrap{
+    flex-wrap: wrap;
+    width: 350px;
+}
+
+/* ------------------------- Ejemplos de justify-content ------------------------- */
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+
+/* ------------------------- Ejemplos de align-items ------------------------- */
+.align-center{
+    align-items: center;
+    height: 200px;
+}
+.align-start{
+    align-items: flex-start;
+    height: 200px;
+}
