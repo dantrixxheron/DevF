@@ -1,0 +1,34 @@
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor de la lista */
+#lista-compras {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo del div donde está la lista */
+#input-container {
+    background-color: #ffcc66; /* Naranja tipo nota adhesiva */
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e69500;
+}
+
+/* Elementos de la lista */
+#lista-compras li {
+    background: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
