@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Selección por ID -->
+    <h1 id="titulo">Hola mundo!</h1>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+
+    <!--Selección por clase -->
+    <p class="texto">Este es el primer parrafo</p>
+    <p class="texto">Este es el segundo parrafo</p>
+    <p class="texto">Este es el tercer parrafo</p>
+    <button onclick="cambiarColor()">Cambiar Color</button>
+    
+    
+    <!--Selección por etiqueta -->
+    <p>Hola soy un parrafo</p>
+    <p>Hola, yo también lo soy</p>
+    <button onclick="ocultarParrafo()">Oculta el segundo parrafo</button>
+    
+    
+    <!--usando querySelector-->
+    <div>
+        <p>Mi perro se llama Milaneso</p>
+    </div>
+    <p>Mi gato se llama Mantequilla</p>
+    <button onclick="cambiarTextoDiv()"></button>
+
+    <!--Usando querySelectorAll-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button onclick="marcarItems()">Marcar Items</button>
+    
+    
+    <script src="apuntesClase.js"></script>
+</body>
+</html>
