@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=content_copy" />
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseñas</h1>
+        <div class="mostrarPaswd">
+            <input type="text" id="paswd" disabled>
+            <button id="copy"><span class="material-symbols-outlined">
+                content_copy
+                </span></button>
+        </div>
+        <div class="settings">
+            <label for="length">Longitud: <span id="longPaswd">12</span></label>
+            <input type="range" id="length" min="8" max="20" value="12">
+            
+            <label><input type="checkbox" id="mayus" checked> Incluir Mayúsculas</label>
+            <label><input type="checkbox" id="minus" checked> Incluir Minúsculas</label>
+            <label><input type="checkbox" id="nums" checked> Incluir Números</label>
+            <label><input type="checkbox" id="simbols"> Incluir Símbolos</label>
+        </div>
+        <button id="btnGenerate">Generar Contraseña</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

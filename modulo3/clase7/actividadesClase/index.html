@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Delicias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Cabecera con barra de navegación-->
+    <header>
+        <h1>Pasteleria Delicias</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="menu-inicio">Inicio</a></li>
+                <li><a href="#" id="menu-productos">Menu</a></li>
+                <li><a href="#" id="menu-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Contenido principal-->
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a nuestra pasteleria</h2>
+            <p>En Pasteleria Delicias encontrarás los mejores postres y pasteles para tus eventos especiales.</p>
+        </section>
+        <!--Sección de productos-->
+        <section id="productos" style="display: none;">
+            <h2>Prueba nuestros deliciosos productos...</h2>
+            <div id="lista-productos">
+                <!--Datos de mis productos-->
+                <div class="producto">
+                    <h3>Pastel de chocolate</h3>
+                    <p>Delicioso pastel de chocolate con relleno de fresas.</p>
+                    <button class="agregar-carrito" data-nombre="Pastel de Chocolate" data-precio="250">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <h3>Pastel de fresas</h3>
+                    <p>Delicioso pastel de fresas con relleno de crema.</p>
+                    <button class="agregar-carrito" data-nombre="Pastel de Fresas" data-precio="150">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <h3>Pastel de vainilla</h3>
+                    <p>Delicioso pastel de vainilla con relleno de chocolate.</p>
+                    <button class="agregar-carrito" data-nombre="Pastel de Vainilla" data-precio="180">Agregar al carrito</button>
+                </div>
+            </div>
+            <div id="carrito">
+                <h2>Carrito</h2>
+                <ul id="lista-carrito"></ul>
+                <p>Total: $<span id="total-carrito">0</span></p>
+            </div>
+        </section>
+        <section id="contacto" style="display: none;">
+            <h2>Contáctanos</h2>
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="mensaje-enviado" style="display: none;">
+                <p>Mensaje enviado correctamente</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
