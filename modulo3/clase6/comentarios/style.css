@@ -2,17 +2,39 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    background-color: #1D3461;
+    color: black;
 }
 
 .form-box {
-    background-color: #f4f4f4;
+    background-color: #F3EFF5;
     padding: 20px;
     margin: auto;
-    width: 300px;
+    width: 50em;
     border-radius: 10px;
 }
-
-input {
+.mail-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.mail-box input{
+    width: 57%;
+}
+.avatar-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    gap: 24px;
+}
+.username{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#comentarioCaja {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
@@ -20,8 +42,26 @@ input {
     border-radius: 5px;
 }
 
+input{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+select{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 button {
-    background: #28a745;
+    background: #43A33C;
     color: white;
     border: none;
     padding: 10px;
@@ -31,38 +71,56 @@ button {
 }
 
 button:hover {
-    background: #218838;
+    background: #368230;
 }
 
 .comments {
     margin-top: 20px;
 }
 
-.comment {
-    background-color: #f4f4f4;
+.comentarioCuadro {
+    background-color: #F3EFF5;
+    display: flex;
+    align-items: flex-start;
     padding: 10px;
     margin: 10px auto;
-    width: 300px;
+    width: 350px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: left;
+    position: relative;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.comentario-content {
+    flex: 1;
 }
 
-.delete-btn {
-    background: red;
-    color: white;
-    border: none;
-    padding: 5px;
-    margin-top: 5px;
-    cursor: pointer;
-    border-radius: 5px;
+.comentario-content p {
+    margin: 5px 0 0;
 }
 
-.delete-btn:hover {
-    background: darkred;
+small {
+    color: gray;
 }
 .comentario{
     display: flex;
 }
-.comentario p{
-    margin-left: 8px;
+.delete-btn {
+    background: #8D5B4C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 5px;
+    right: 5px;
+}
+
+.delete-btn:hover {
+    background: #744b3e;
 }

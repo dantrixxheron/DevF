@@ -1,22 +1,45 @@
 <!DOCTYPE html>
-<html lang="es"> 
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caja de Comentarios</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete" />
 </head>
+
 <body>
-    <h1>Caja de Comentarios</h1>
     <div class="form-box">
-            <label for="comentario">Deja un comentario</label>
-            <input type="text" id="comentarioCaja" placeholder="Escribe tu comentario aquí...">
-            <button onclick="subir()">Subir</button>
+        <h1>Deja un comentario</h1>
+        <div class="mail-box">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Escribe tu email aquí...">
+        </div>
+        <form id="comment-form">
+            <div class="avatar-name">
+                <div class="img-avatar">
+                    <select id="avatar">
+                        <option value="">Selecciona un avatar</option>
+                        <option value="./img/maleUser.png">Male user</option>
+                        <option value="./img/femUser.svg">Female user</option>
+                        <option value="./img/neutralUser.png">Neutral user</option>
+                    </select>
+                </div>
+                <div class="username">
+                    <label for="username">Nombre de usuario</label>
+                    <input type="text" id="username" placeholder="Tu nombre...">
+                </div>
+            </div>
+            <label for="comentarioCaja">Comentario</label>
+            <textarea name="comentarioCaja" id="comentarioCaja" cols="30" rows="10"
+                placeholder="Escrube tu comentario aqui"></textarea>
+            <button  type="button" onclick="addComentarioLStorage()">Subir</button>
+        </form>
     </div>
     <div id="comments-container" class="comments">
-
     </div>
-    
     <script src="main.js"></script>
 </body>
+
 </html>
