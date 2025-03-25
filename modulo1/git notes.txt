@@ -1,0 +1,4 @@
+git checkout . //regresar al commit anterior
+git checkout [id del commit] //regresar al commit en especial
+//si se puede regresar otra vez para adelante
+
