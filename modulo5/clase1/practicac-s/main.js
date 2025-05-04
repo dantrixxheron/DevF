@@ -21,6 +21,9 @@ function updateOrdenStatus(orden, status) {
     if (listItem) {
         listItem.textContent = `Pedido #${orden.id}: ${status}`;
     }
+    if (status === "Completado") {
+        listItem.classList.add("completado");
+    }
 }
 
 async function processOrden(orden) {
@@ -37,9 +40,5 @@ async function processOrden(orden) {
 
 }
 function completarOrden(orden){
-    orden.status="Completado"
-    const element =document.getElementById(`orden-${orden.id}`);
-    if(element){
-        element.textContent=`Pedido #${orden.id}: ${orden.status}`
-    }
+    updateOrdenStatus(orden,"Completado")
 }
