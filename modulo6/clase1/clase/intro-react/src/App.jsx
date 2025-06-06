@@ -1,5 +1,6 @@
 import "./App.css";
 import Card from "./Components/Card";
+import Counter from "./Components/Counter";
 
 const alt = "lay down cat";
 function App() {
@@ -27,6 +28,7 @@ function App() {
         alt={alt}
         text="Gato 3"
       />
+      <Counter />
     </>
   );
 }
