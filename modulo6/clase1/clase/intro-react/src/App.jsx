@@ -1,6 +1,7 @@
 import "./App.css";
 import Card from "./Components/Card";
 import Counter from "./Components/Counter";
+import FilterableList from "./Components/FilterableList";
 
 const alt = "lay down cat";
 function App() {
@@ -29,6 +30,7 @@ function App() {
         text="Gato 3"
       />
       <Counter />
+      <FilterableList />
     </>
   );
 }

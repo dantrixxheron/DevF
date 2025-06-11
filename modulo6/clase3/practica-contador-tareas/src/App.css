@@ -1,0 +1,108 @@
+/* Estilo base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* hace que tome toda la altura visible */
+}
+
+
+.app-container {
+  max-width: 700px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Títulos */
+.titulo {
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  color: #555;
+}
+
+.total {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #444;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.boton {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #4b54cc;
+}
+
+/* Filtro */
+.filtro {
+  margin: 1rem 0;
+}
+
+.select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  margin-right: 0.5rem;
+}
+
+/* Lista de tareas */
+.lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.item {
+  background-color: #f9f9f9;
+  margin-bottom: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-left: 5px solid #646cff;
+  border-radius: 6px;
+}
+
+.vacio {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
