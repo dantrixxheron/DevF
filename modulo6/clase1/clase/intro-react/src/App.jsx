@@ -2,6 +2,7 @@ import "./App.css";
 import Card from "./Components/Card";
 import Counter from "./Components/Counter";
 import FilterableList from "./Components/FilterableList";
+import Timer from "./Components/Timer";
 
 const alt = "lay down cat";
 function App() {
@@ -31,6 +32,7 @@ function App() {
       />
       <Counter />
       <FilterableList />
+      <Timer />
     </>
   );
 }
