@@ -1,11 +1,16 @@
 import "./App.css";
 import Card from "./Components/Card";
+import ConditionalSquare from "./Components/ConditionalSquare";
 import Counter from "./Components/Counter";
 import FilterableList from "./Components/FilterableList";
+import SquareContainer from "./Components/SquareContainer";
 import Timer from "./Components/Timer";
+import { useState } from "react";
 
 const alt = "lay down cat";
 function App() {
+  const [counter, setCounter] = useState(0);
+  const [squareCounter, setSquareCounter] = useState(0);
   return (
     <>
       <h1>Este es mi primer componente:</h1>
@@ -30,9 +35,16 @@ function App() {
         alt={alt}
         text="Gato 3"
       />
-      <Counter />
+      <Counter counter={counter} setCounter={setCounter} />
       <FilterableList />
       <Timer />
+      <h1>Contador de cuadrados</h1>
+      <Counter counter={squareCounter} setCounter={setSquareCounter} />
+      <SquareContainer>
+        {Array.from({ length: squareCounter }, (_, index) => (
+          <ConditionalSquare key={index} />
+        ))}
+      </SquareContainer>
     </>
   );
 }

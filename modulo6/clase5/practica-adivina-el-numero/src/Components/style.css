@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal del juego */
+.container {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Título */
+.container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #0077cc;
+}
+
+/* Input de número */
+input[type="number"] {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #005fa3;
+}
+
+/* Mensaje de pista o éxito */
+.message p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  background-color: #e8f4fc;
+  border-left: 4px solid #0077cc;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  color: #333;
+}
+
+/* Botón de reinicio */
+.restart-button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.restart-button:hover {
+  background-color: #005fa3;
+}
