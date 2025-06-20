@@ -5,6 +5,9 @@ import Counter from "./Components/Counter";
 import FilterableList from "./Components/FilterableList";
 import SquareContainer from "./Components/SquareContainer";
 import Timer from "./Components/Timer";
+import FocusInput from './Components/FocusInput'
+import Parent from './Components/useCallbackExample'
+import ContadorReducer from './Components/ContadorReducer'
 import { useState } from "react";
 
 const alt = "lay down cat";
@@ -45,6 +48,9 @@ function App() {
           <ConditionalSquare key={index} />
         ))}
       </SquareContainer>
+      <FocusInput />
+      <Parent />
+      <ContadorReducer />
     </>
   );
 }
