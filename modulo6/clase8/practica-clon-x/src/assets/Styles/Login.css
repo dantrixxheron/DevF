@@ -1,0 +1,52 @@
+/* Login.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.log-cont {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.log-cont h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1da1f2;
+}
+
+.log-cont label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.log-cont input[type="text"],
+.log-cont input[type="password"] {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #1da1f2;
+  color: white;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0d8ae2;
+}
