@@ -4,10 +4,22 @@
     margin: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.imgs{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
 .card{
     border: 1px solid #313131;
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 12px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
