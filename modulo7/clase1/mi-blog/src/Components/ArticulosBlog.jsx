@@ -17,7 +17,7 @@ export default function ArticulosBlog(){
             .finally(()=>setIsLoading(false));
     },[])
     if(isLoading) return <h1>Cargando articulos...</h1>
-    if(error) return <h1>Error: {error}</h1>
+    if(error) return <h1>Error: {error.message}</h1>
     return(
         <div className="articulos">
             <h1>Imágenes de Corgies</h1>
