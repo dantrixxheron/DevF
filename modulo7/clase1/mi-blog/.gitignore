@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+# .env lo ideal es que ignore esto pero por el ejemplo la dejaré así
 
 # Editor directories and files
 .vscode/*
